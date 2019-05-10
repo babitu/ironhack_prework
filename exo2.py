@@ -55,10 +55,8 @@ for i in range(len(gandalf_power)):
         spell_clash.append('Tie')
 # check for 3 wins in a row
 winner = 'no one'
-for counter in range(len(spell_clash)):
-    if counter > len(spell_clash)-2:
-        break
-    elif spell_clash[counter] == spell_clash[counter+1] == spell_clash[counter+2]:
+for counter in range(len(spell_clash)-2):
+    if spell_clash[counter] == spell_clash[counter+1] == spell_clash[counter+2]:
         winner = spell_clash[counter]
         break
 
